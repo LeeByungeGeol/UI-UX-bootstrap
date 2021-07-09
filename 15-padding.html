@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15-padding</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container>.row{
+            border: 1px solid red;
+            padding-bottom:10px;
+        }
+        .row>div{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>padding</h1>
+    <p>ps:padding start padding-left</p>
+    <p>pe:padding end padding-right</p>
+    <p>pt:padding-top,mb:padding-bottom</p>
+    <p>px: padding-left ,padding-right </p>
+    <p>py :padding-top, padding-bottom </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 p-5">col1</div>
+            <div class="col-3">col2</div>
+        </div>
+        <div class="row">
+            <div class="col-3">col1</div>
+            <div class="col-3 ps-5 pt-5">col2</div>
+        </div>
+        <div class="row">
+            <div class="col-3">col1</div>
+            <div class="col-3 px-5 py-3">col2</div>
+        </div>
+        <div class="row">
+            <div class="col-6 pb-5">dsf</div>
+        </div>
+    </div>
+</body>
+</html>

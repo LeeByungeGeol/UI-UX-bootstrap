@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-margin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container>.row{
+            border: 1px solid red;
+            margin-bottom:10px;
+        }
+        .row>div{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>margin</h1>
+    <p>ms:margin start margin-left</p>
+    <p>me:margin end margin-right</p>
+    <p>mt:margin-top,mb:margin-bottom</p>
+    <p>mx: margin-left ,margin-right mx-auto </p>
+    <p>my :margin-top, margin-bottom </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 m-4">col1</div>
+            <div class="col-3 ms-auto">col2</div>
+        </div>
+        <div class="row">
+            <div class="col-3">col1</div>
+            <div class="col-3 ms-5 mt-5">col2</div>
+        </div>
+        <div class="row">
+            <div class="col-3">col1</div>
+            <div class="col-3 mx-5 my-3">col2</div>
+        </div>
+        <div class="row">
+            <div class="col-6 mx-auto">dsf</div>
+        </div>
+    </div>
+</body>
+</html>

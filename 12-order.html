@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-order</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container .row{
+            border:1px solid red;
+        }
+        .container .row>div{
+            border:1px solid black;
+        }
+        </style>
+</head>
+<body>
+    <h1>order</h1>
+    <p>order 1~5까지,first,last 사용 작은게 앞에온다 order-숫자, order-breakpoint-숫자</p>
+    <div class="container">
+        <div class="row">
+            <div class="col order-last">col1</div>
+            <div class="col">col2</div>
+            <div class="col order-first">col3</div>
+        </div>
+        <div class="row">
+            <div class="col">col1</div>
+            <div class="col order-5">col2</div>
+            <div class="col order-2">col3</div>
+        </div>
+        <div class="row">
+            <div class="col order-md-5">col1</div>
+            <div class="col">col2</div>
+            <div class="col order-2">col3</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-grid-nest</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container{
+            margin-bottom:20px;
+        }
+        .container .row{
+            border:1px solid red;
+        }
+        .container .row>div{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                    <div class="col">6</div>
+                    <div class="col">7</div>
+                    <div class="col">8</div>
+                    <div class="col">9</div>
+                    <div class="col">10</div>
+                    <div class="col">11</div>
+                    <div class="col">12</div>
+                </div>
+            </div>
+            <div class="col">2222</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">111</div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-8 col-md-6">3333333333333</div>
+                    <div class="col-4 col-md-6">44444444444</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

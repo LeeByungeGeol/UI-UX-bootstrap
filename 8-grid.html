@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-grid</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container{
+            margin-bottom:20px;
+        }
+        .container .row{
+            border:1px solid red;
+        }
+        .container .row>div{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p>992이상에서 2개, 이하에서 4개씩 보이도록</p>
+    <h1>col-숫자</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-3">col1</div>
+            <div class="col-lg-6 col-3">col2</div>
+            <div class="col-lg-6 col-3">col3</div>
+            <div class="col-lg-6 col-3">col4</div>
+        </div>
+    </div>
+    <h1>row-cols-*</h1>
+    <div class="container">
+        <div class="row row-cols-lg-2">
+            <div class="col">col1</div>
+            <div class="col">col2</div>
+            <div class="col">col3</div>
+            <div class="col">col4</div>
+        </div>
+    </div>
+</body>
+</html>

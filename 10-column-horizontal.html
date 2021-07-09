@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-column-horizontal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container .row{
+            border:1px solid red;
+            height:100px;
+            margin-bottom:10px;
+        }
+        .container .row>div{
+            border:1px solid black;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>좌우 정렬</h1>
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-3">col1</div>
+            <div class="col-3">col2</div>
+            <div class="col-3">col3</div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-3">col1</div>
+            <div class="col-3">col2</div>
+            <div class="col-3">col3</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-3">col1</div>
+            <div class="col-3">col2</div>
+            <div class="col-3">col3</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-3">col1</div>
+            <div class="col-3">col2</div>
+            <div class="col-3">col3</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-3">col1</div>
+            <div class="col-3">col2</div>
+            <div class="col-3">col3</div>
+        </div>
+        <div class="row justify-content-evenly">
+            <div class="col-3">col1</div>
+            <div class="col-3">col2</div>
+            <div class="col-3">col3</div>
+        </div>
+    </div>
+</body>
+</html>

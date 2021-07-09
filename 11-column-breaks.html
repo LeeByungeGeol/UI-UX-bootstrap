@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-column-breaks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container .row{
+            border:1px solid red;
+            /* height:100px;
+            margin-bottom:10px; */
+        }
+        .container .row>div{
+            border:1px solid black;
+            /* height:30px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">col1</div>
+            <div class="col">col2</div>
+            <div class="w-100 d-none d-lg-block"></div>
+            <div class="col">col3</div>
+            <div class="col">col4</div>
+        </div>
+    </div>
+</body>
+</html>

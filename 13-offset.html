@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-offset</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container>.row{
+            border: 1px solid red;
+            margin-bottom:10px;
+        }
+        .row>div{
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>offset</h1>
+    <p>margin-left 처럼 왼쪽에 여백을 줄때 사용한다</p>
+    <p>offset-breakpoint-숫자</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">col1</div>
+            <div class="col-3 offset-md-3 offset-sm-2">col2</div>
+            <div class="col-3 offset-md-0 offset-sm-1">col3</div>
+        </div>
+        <div class="row">
+            <div class="col-3 offset-sm-1">col1</div>
+            <div class="col-3 offset-sm-1">col2</div>
+            <div class="col-3 offset-sm-1">col3</div>
+        </div>
+        <div class="row">
+            <div class="col-3">col1</div>
+            <div class="col-4 offset-1">col2</div>
+            <div class="col-3 offset-1">col3</div>
+        </div>
+    </div>
+</body>
+</html>

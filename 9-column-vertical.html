@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9-column-vertical</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container .row{
+            border:1px solid red;
+            height:200px;
+            margin-bottom:10px;
+        }
+        .container .row>div{
+            border:1px solid black;
+            height:30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>위아래 정렬</h1>
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">col1</div>
+            <div class="col">col2</div>
+            <div class="col">col3</div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">col1</div>
+            <div class="col">col2</div>
+            <div class="col">col3</div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">col1</div>
+            <div class="col">col2</div>
+            <div class="col">col3</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col align-self-start">col1</div>
+            <div class="col align-self-center">col2</div>
+            <div class="col align-self-end">col3</div>
+        </div>
+    </div>
+</body>
+</html>
