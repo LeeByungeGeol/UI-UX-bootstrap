@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26-position</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .container{
+            height:300px;
+            background-color:beige;
+            margin-bottom: 30px;
+        }
+        .container>div{
+            width:50px;
+            height:50px;
+            background-color:deepskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>position</h1>
+    <div class="container position-relative">
+        <div class="position-absolute top-0 start-0">box1</div>
+        <div class="position-absolute top-0 end-0">box2</div>
+        <div class="position-absolute top-50 start-50">box3</div>
+        <div class="position-absolute bottom-0 start-0">box4</div>
+        <div class="position-absolute bottom-0 end-0">box5</div>
+        <div class="position-absolute bottom-0 end-50">box6</div>
+    </div>
+    <hr>
+
+    <div class="container position-relative">
+        <div class="position-absolute top-50 start-0 translate-middle-y">box11</div>
+        <div class="position-absolute top-50 start-50 translate-middle">box12</div>
+        <div class="position-absolute top-50 end-0 translate-middle-y">box13</div>
+    </div>
+</body>
+</html>
